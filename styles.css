@@ -30,6 +30,7 @@ html, body{
 .item{
     background-color: rgb(95, 95, 95);
     padding: 20px;
+    border: 1px solid;
 }
 .header{
     grid-area: header;
@@ -198,5 +199,103 @@ html, body{
     }
     .section1 a{
         width: 150px;
+    }
+}
+.section2{
+    height: 2200px;
+    background-color: #2E2E2E;
+}
+.titulo2{
+    font-family: "Montserrat";
+    padding: 60px;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+.servicos{
+    border-radius: 20px;
+    font-family: "Montserrat";
+    color: #FFFFFF;
+    display: grid;
+    background-color: #A0B6A9;
+    width: 978px;
+    position: relative;
+    z-index: 2;
+    grid-template-areas: 
+    "servico1 servico1 servico2 servico2"
+    "servico3 servico3 servico4 servico4"
+    "servico5 servico5 servico6 servico6"
+}
+.servicos h1{
+    color: #FFFFFF;
+}
+.servico1{
+    grid-area: servico1;  
+}
+.servico2{
+    grid-area: servico2;  
+}
+.servico3{
+    grid-area: servico3;  
+}
+.servico4{
+    grid-area: servico4;  
+}
+.servico5{
+    grid-area: servico5;
+}
+.servico6{
+    grid-area: servico6;
+}
+.serv{
+    padding: 40px;
+    max-width: 100%;
+}
+.sombra{
+    position: absolute; 
+    height: 100%; 
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    top: 800px;
+    left: 350px;
+}
+.sombra img{
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0.9);
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transition: transform 0.5s ease;
+}
+
+@media (max-width:1000px){
+    .sombra img{
+        position: absolute;
+        transform: translate(-50%, -50%) scale(1.2);
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        transition: transform 0.5s ease;
+    }
+    .sombra{
+        position: absolute; 
+        height: 100%; 
+        width: 100%;
+        overflow: hidden;
+        z-index: 1;
+        top: 800px;
+        left: 350px;
+    }
+    .titulo2{
+        padding: 20px 15px;
+        line-height: 40px;
+    }
+    .servicos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
     }
 }
