@@ -61,7 +61,6 @@ html, body{
     display: flex;
     justify-content: end;
     margin:0;
-    background-color: aqua;
 }
 .menu nav a,
 .menu nav button {
@@ -126,17 +125,17 @@ html, body{
    .menu nav button{       
     margin-top: 10px;
     width: 250px;
+    font-size: 18px;
   }
   .logo{
     margin: 0;
+    padding: 0;
   }
-    .menu nav a,
-    .menu nav button {
-    margin: 10px;
+    .menu nav {
+    font-size: 18px;
     text-align: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 }
 .section1{
