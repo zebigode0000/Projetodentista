@@ -83,6 +83,7 @@ html, body{
     padding: 10px;
     border-radius: 20px;
     transition: all 0.5s ease;
+    display: block;
 }
 .menu nav button:hover{
     background-color: var(--primary);
@@ -142,6 +143,9 @@ html, body{
     padding-bottom: 10px;
     padding-top: 10px;
 }
+.menu nav button{
+    display: none;
+}
 }
 .section1{
     background-image: url(sorrisogrande.jpg);
@@ -163,7 +167,22 @@ html, body{
     color: #4e5852;
     font-weight: 500;
 }
-
+.section1 a{
+    background-color: var(--accent);
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    width: 200px;
+    margin-top: 10px;
+}
+.section1 a:hover{
+    background-color: #6F7F75;
+}
 
 @media (max-width: 1000px){
     .section1{
@@ -182,9 +201,12 @@ html, body{
         width: 350px;
 
     }
+    .section1 a{
+        width: 150px;
+    }
 }
 .section2{
-    height: 2200px;
+    height: 1000px;
     background-color: #FFFFFF;
     overflow: hidden;
     position: relative;
@@ -237,12 +259,12 @@ html, body{
 }
 .sombra{
     position: absolute; 
-    height: 100%; 
+    height: 50%; 
     width: 100%;
     overflow: hidden;
     z-index: 1;
-    top: 800px;
-    left: 350px;
+    top: 155px;
+    left: 490px;
     
 }
 .sombra img{
@@ -256,6 +278,9 @@ html, body{
 }
 
 @media (max-width:1000px){
+    .section2{
+        height: 2200px;
+    }
     .sombra img{
         position: absolute;
         transform: translate(-50%, -50%) scale(0.4);
@@ -271,7 +296,7 @@ html, body{
         overflow: hidden;
         z-index: 1;
         top: -300px;
-        
+        left: 27px;
     }
     .titulo2{
         padding: 20px 15px;
