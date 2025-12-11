@@ -204,6 +204,7 @@ html, body{
 .section2{
     height: 2200px;
     background-color: #FFFFFF;
+    overflow: hidden;
 }
 .titulo2{
     font-family: "Montserrat";
