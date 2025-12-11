@@ -20,7 +20,6 @@ html, body{
     max-width: 100%;
     width: 100%;
     min-width: 0;
-    background-color: bisque;
     grid-template-areas: 
     "header header header header header"
     "section1 section1 section1 section1 section1"
@@ -102,17 +101,21 @@ html, body{
 
 }
 @media (max-width:1000px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .header{
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
     .menu{
         display: flex;
-    justify-content: center;
-    margin: 0;
-    width: 100%;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
   }
 
   .menu nav{
@@ -121,13 +124,14 @@ html, body{
     justify-content: center;
     width: 100%;
     gap: 10px;
+    
   }
    .menu nav button{       
     margin-top: 10px;
     width: 250px;
-    font-size: 18px;
   }
   .logo{
+
     margin: 0;
     padding: 0;
   }
