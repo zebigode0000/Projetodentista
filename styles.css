@@ -163,22 +163,7 @@ html, body{
     color: #4e5852;
     font-weight: 500;
 }
-.section1 a{
-    background-color: var(--accent);
-    border: 1px solid;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: all 0.5s ease;
-    color: aliceblue;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: center;
-    width: 200px;
-    margin-top: 10px;
-}
-.section1 a:hover{
-    background-color: #6F7F75;
-}
+
 
 @media (max-width: 1000px){
     .section1{
@@ -196,9 +181,6 @@ html, body{
         font-size: 30px;
         width: 350px;
 
-    }
-    .section1 a{
-        width: 150px;
     }
 }
 .section2{
