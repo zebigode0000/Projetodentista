@@ -276,7 +276,7 @@ html, body{
 @media (max-width:1000px){
     .sombra img{
         position: absolute;
-        transform: translate(-50%, -50%) scale(1.0);
+        transform: translate(-50%, -50%) scale(0.4);
         top: 50%;
         left: 50%;
         min-width: 100%;
@@ -284,12 +284,11 @@ html, body{
     }
     .sombra{
         position: absolute; 
-        height: 60%; 
+        height: 100%; 
         width: 100%;
         overflow: hidden;
         z-index: 1;
-        top: 300px;
-        left: 0px;
+        top: -300px;
         
     }
     .titulo2{
