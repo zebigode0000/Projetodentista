@@ -205,6 +205,7 @@ html, body{
     height: 2200px;
     background-color: #FFFFFF;
     overflow: hidden;
+    position: relative;
 }
 .titulo2{
     font-family: "Montserrat";
