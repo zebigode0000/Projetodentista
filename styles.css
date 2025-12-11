@@ -13,6 +13,9 @@
 
 .container{
     display: grid;
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
     background-color: bisque;
     grid-template-areas: 
     "header header header header header"
