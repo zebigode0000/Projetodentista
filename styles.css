@@ -66,7 +66,8 @@ html, body{
 .menu nav button {
     text-decoration: none;
     font-family: "Montserrat";
-    color: white;
+    color: #3d4942;
+    font-size: large;
 }
 .menu nav{
     display: flex;
@@ -99,7 +100,7 @@ html, body{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: #6F7F75;
+    background-color: #F5F5F5;
 
 }
 @media (max-width:1000px){
