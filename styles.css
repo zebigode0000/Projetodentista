@@ -350,6 +350,7 @@ html, body{
 }
 .conteudo-equipe{
     padding-top: 10px;
+    padding-left: 10px;
 }
 .conteudo-equipe p{
     padding-top: 10px;
@@ -360,6 +361,29 @@ html, body{
 
 .conteudo-equipe h1{
     color: #3d4942;
+}
+.btt-sobre{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.btt-sobre a{
+    font-family: "Montserrat";
+    background-color: var(--accent);
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    width: 200px;
+    margin-top: 10px;
+}
+.btt-sobre a:hover{
+    transform: scale(1.02);
+    background-color: #3d4942;
 }
 @media (max-width:1000px){
     .equipe{
@@ -373,10 +397,22 @@ html, body{
         margin-bottom: 50px;
         width: 325px;
     }
+    .func3{
+        margin-bottom: 0;
+    }
     .imgequipe img{
         width: 280px;
     }
     .func2{
         text-align: end;
+    }
+    .conteudo-equipe{
+        padding-bottom: 10px;
+    }
+    .btt-sobre{
+        padding: 20px;
+    }
+    .btt-sobre a{
+        margin: 0;
     }
 }
