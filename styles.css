@@ -24,11 +24,12 @@ html, body{
     "header header header header header"
     "section1 section1 section1 section1 section1"
     "section2 section2 section2 section2 section2"
+    "section3 section3 section3 section3 section3"
     "footer footer footer footer footer"
     ;
 }
 .item{
-    background-color: rgb(95, 95, 95);
+    
     border: 1px solid;
 }
 .header{
@@ -40,6 +41,9 @@ html, body{
 }
 .section2{
     grid-area: section2;
+}
+.section3{
+    grid-area: section3;
 }
 .footer{
     grid-area: footer;
@@ -280,7 +284,7 @@ html, body{
 
 @media (max-width:1000px){
     .section2{
-        height: 2200px;
+        height: 2300px;
     }
     .sombra img{
         position: absolute;
@@ -310,5 +314,69 @@ html, body{
     }
     .serv{
         padding-right: 80px;
+    }
+}
+.section3{
+    font-family: "Montserrat";
+}
+.equipe{
+    display: grid;
+    justify-content: space-around;
+    grid-template-areas: 
+    "func1 func2 func3"
+    ;
+}
+.equipe1{
+    border-radius: 20px;
+    background-color: #eeeeee;
+    padding-bottom: 20px;
+    width: 400px;
+}
+.imgequipe{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.imgequipe img{
+    width: 350px;
+    border-radius: 20px;
+}
+#h1eqp{
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 50px;
+    color: #3d4942;
+    padding: 20px;
+}
+.conteudo-equipe{
+    padding-top: 10px;
+}
+.conteudo-equipe p{
+    padding-top: 10px;
+}
+.conteudo-equipe h2, p{
+    color: #4e5852;
+}
+
+.conteudo-equipe h1{
+    color: #3d4942;
+}
+@media (max-width:1000px){
+    .equipe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .equipe1{
+        text-align: start;
+        padding: 0 30px;
+        margin-bottom: 50px;
+        width: 325px;
+    }
+    .imgequipe img{
+        width: 280px;
+    }
+    .func2{
+        text-align: end;
     }
 }
