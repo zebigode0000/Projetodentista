@@ -218,8 +218,8 @@ html, body{
 }
 .titulo2{
     font-family: "Montserrat";
-    padding: 60px;
-    margin: 2vh 0px;
+    padding: 40px;
+    margin: 0.2vh 0px;
     font-size: 50px;
     color: #3d4942;
 }
@@ -356,6 +356,7 @@ html, body{
     background-color: #eeeeee;
     padding-bottom: 20px;
     width: 400px;
+    margin-bottom: 25px;
 }
 .imgequipe{
     display: flex;
