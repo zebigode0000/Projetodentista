@@ -225,6 +225,7 @@ html, body{
     background-color: #FFFFFF;
     overflow: hidden;
     position: relative;
+    padding-bottom: 30px;
 }
 .titulo2{
     font-family: "Montserrat";
@@ -353,6 +354,7 @@ html, body{
 }
 .section3{
     font-family: "Montserrat";
+    margin-bottom: 50px;
 }
 .equipe{
     display: grid;
