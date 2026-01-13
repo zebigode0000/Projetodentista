@@ -650,7 +650,7 @@ html, body{
     font-family: "Montserrat";
     padding: 10px;
     text-align: center;
-
+    text-decoration: none;
 }
 .direitos hr{
     width: 90%;
