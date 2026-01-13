@@ -576,22 +576,21 @@ html, body{
     text-decoration: none;
     cursor: pointer;
     text-align: center;
-    width: 200px;
+    width: 100%;
     margin-top: 10px;
     font-family: "Montserrat";
 }
 .btt-agendamento a{
     text-decoration: none;
     color: #FFFFFF;
-    
 
 }
+
 @media (max-width:1000px){
     .agenda{
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin: 30px;
-        padding-right: 10vw;
+        padding: 30px;
     }
 }
