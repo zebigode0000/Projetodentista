@@ -27,6 +27,7 @@ html, body{
     "section3 section3 section3 section3 section3"
     "section4 section4 section4 section4 section4"
     "section5 section5 section5 section5 section5"
+    "section6 section6 section6 section6 section6"
     "footer footer footer footer footer"
     ;
 }
@@ -51,6 +52,9 @@ html, body{
 }
 .section5{
     grid-area: section5;
+}
+.section6{
+    grid-area: section6;
 }
 .footer{
     grid-area: footer;
@@ -499,6 +503,10 @@ html, body{
     overflow: hidden;
     background-color: #9FB6A8;
     display: flex;
+    overflow-x: auto;
+}
+.carousel::-webkit-scrollbar{
+    display: none;
 }
 
 .track {
@@ -522,6 +530,9 @@ html, body{
   font-family: sans-serif;
   min-height: 20vh;
 }
+.card i{
+    color: gold;
+}
 .tituloav{
     text-align: center;
     font-family: "Montserrat";
@@ -540,4 +551,47 @@ html, body{
   to {
     transform: translate(-100%);
   }
+}
+
+.agenda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 30vh;
+    font-family: "Montserrat";
+}
+.agendamento h1{
+    color: #3d4942;
+    font-size: 40px;
+}
+.btt-agendamento{
+    background-color: var(--accent);
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    width: 200px;
+    margin-top: 10px;
+    font-family: "Montserrat";
+}
+.btt-agendamento a{
+    text-decoration: none;
+    color: #FFFFFF;
+    
+
+}
+@media (max-width:1000px){
+    .agenda{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 30px;
+        padding-right: 10vw;
+    }
 }
