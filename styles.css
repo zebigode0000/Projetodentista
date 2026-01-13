@@ -539,6 +539,7 @@ html, body{
     font-family: "Montserrat";
     color: grey;
     margin: 20px 0px;
+    padding: 0px 10px;
 }
 .tituloav h1{
     font-size: 40px;
