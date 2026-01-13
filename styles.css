@@ -566,6 +566,9 @@ html, body{
     color: #3d4942;
     font-size: 40px;
 }
+.agendamento{
+    padding-bottom: 15px;
+}
 .btt-agendamento{
     background-color: var(--accent);
     border: 1px solid;
