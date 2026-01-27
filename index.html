@@ -170,17 +170,46 @@
         </div>
 
     </section>
-    <section class="item section6">
-        <div class="agenda" id="contato">
-            <div class="agendamento">
-                <h1>Agende sua Consulta</h1>
-                <p>Entre em contato conosco e dê o primeiro passo para ter o sorriso dos seus sonhos</p>
+    <section class="item section6" id="agendar">
+    <div class="container-agenda">
+        <div class="agenda-header">
+            <h1>Agende sua Consulta</h1>
+            <p>Preencha seus dados abaixo e nossa equipe confirmará o horário.</p>
+        </div>
+
+        <div class="card-agendamento">
+            <h3 class="agenda-title"><i class="fa-solid fa-circle-check"></i> SEUS DADOS</h3>
+            
+            <div class="input-field">
+                <label>NOME COMPLETO</label>
+                <input type="text" id="nome-agenda" placeholder="Digite seu nome completo">
             </div>
-            <div class="btt-agendamento">
-                <a href=""><i class="fa-regular fa-calendar"></i>Agendar Consulta pelo Whatsapp</a>
-            </div>   
-        </div>            
-    </section>
+
+            <div class="input-field">
+                <label>CELULAR / WHATSAPP</label>
+                <input type="text" id="tel-agenda" placeholder="(DD) 90000-0000">
+            </div>
+
+            <div class="input-field">
+                <label>E-MAIL</label>
+                <input type="email" id="email-agenda" placeholder="seu@email.com">
+            </div>
+
+            <h3 class="agenda-title"><i class="fa-regular fa-calendar-days"></i> DATA</h3>
+            <input type="date" id="data-agenda" class="input-date">
+
+            <h3 class="agenda-title"><i class="fa-regular fa-clock"></i> HORÁRIO</h3>
+            <div class="grid-horarios" id="grid-horarios">
+                </div>
+
+            <button class="btn-confirmar-agenda" onclick="enviarAgendamento()">
+                CONFIRMAR AGENDAMENTO <i class="fa-solid fa-check"></i>
+            </button>
+            <p class="nota-footer">* Nossa equipe entrará em contato via WhatsApp para confirmar.</p>
+        </div>
+    </div>
+</section>
+    
     <footer class="item footer">
         <div class="divfoot footer1">
             <img src="logofooter.png" alt="">
@@ -204,6 +233,40 @@
         <p>© 2025 Clinica Sognares. Todos os direitos reservados.</p>
     </div>
 </div>
+    <script>
+        const slots = ["08:00", "09:00", "10:00", "11:00", "14:00", "15:00", "16:00", "17:00", "18:00"];
+const grid = document.getElementById('grid-horarios');
+let horaEscolhida = null;
+
+// Gerar botões de horário
+slots.forEach(h => {
+    const div = document.createElement('div');
+    div.classList.add('hora-item');
+    div.innerText = h;
+    div.onclick = () => {
+        document.querySelectorAll('.hora-item').forEach(el => el.classList.remove('selected'));
+        div.classList.add('selected');
+        horaEscolhida = h;
+    };
+    grid.appendChild(div);
+});
+
+function enviarAgendamento() {
+    const nome = document.getElementById('nome-agenda').value;
+    const tel = document.getElementById('tel-agenda').value;
+    const data = document.getElementById('data-agenda').value;
+
+    if (!nome || !tel || !data || !horaEscolhida) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+    }
+
+    // Formata mensagem para o WhatsApp
+    const mensagem = `Olá Dra. Amanda! Gostaria de agendar uma consulta.%0A%0A*Nome:* ${nome}%0A*Data:* ${data}%0A*Horário:* ${horaEscolhida}`;
+    const url = `https://wa.me/5511985149353?text=${mensagem}`;
     
+    window.open(url, '_blank');
+}
+    </script>
 </body>
 </html>

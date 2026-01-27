@@ -555,43 +555,103 @@ html, body{
   }
 }
 
-.agenda{
+/* Estilização do Agendamento */
+.section6 {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
     display: flex;
     justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
-    padding: 3%;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
 }
-.agendamento h1{
-    color: #3d4942;
-    font-size: 40px;
-}
-.agendamento{
-    padding-bottom: 15px;
-}
-.btt-agendamento{
-    background-color: var(--accent);
-    border: 1px solid;
-    padding: 10px 20px;
-    border-radius: 30px;
-    transition: all 0.5s ease;
-    color: aliceblue;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: center;
-    margin-top: 10px;
-    font-family: "Montserrat";
-}
-.btt-agendamento:hover{
-    background-color: #374A3D;
-}
-.btt-agendamento a{
-    text-decoration: none;
-    color: #FFFFFF;
 
+.container-agenda {
+    width: 100%;
+    max-width: 500px;
+}
+
+.agenda-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.agenda-header h1 {
+    color: #374A3D;/* Cor azul do seu tema */
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-agendamento {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.agenda-title {
+    font-size: 14px;
+    color: #374A3D;
+    margin: 25px 0 10px;
+    font-weight: 700;
+}
+
+.input-field { margin-bottom: 15px; }
+
+.input-field label {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-field input, .input-date {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid-horarios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.hora-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.hora-item:hover { border-color: #374A3D; color: #374A3D; }
+.hora-item.selected { background: #374A3D; color: white; border-color: #374A3D; }
+
+.btn-confirmar-agenda {
+    width: 100%;
+    background-color: #374A3D;
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-confirmar-agenda:hover { background-color: #4cae4c; }
+
+.nota-footer {
+    font-size: 12px;
+    text-align: center;
+    color: #888;
+    margin-top: 15px;
 }
 
 @media (max-width:1000px){
